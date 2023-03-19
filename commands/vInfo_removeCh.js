@@ -15,16 +15,17 @@ module.exports = {
     async execute(interaction) {
 
         var message = "";
+        var channelList = ChannelList.ReadJsonList();
 
-        var removechannel = ChannelList.find(element =>{
-            return element == interaction.options.getChannel('channel');
+        var removechannel = channelList.find(element =>{
+            return element.id == interaction.options.getChannel('channel').id;
         })
 
         if(removechannel != null){
-            var id = ChannelList.indexOf(removechannel);
-            ChannelList.splice(id, 1);
+            var id = channelList.indexOf(removechannel);
+            ChannelList.RemoveChannel(id);
             
-            message = "Remove :" + String(removechannel);            
+            message = "Remove :" + String(removechannel.name);            
         }      
         else{
             message = "Can't find."

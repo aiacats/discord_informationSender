@@ -14,9 +14,10 @@ module.exports = {
     async execute(interaction, client) {
 
         const message = interaction.options.getString('message');
+        var channelList = ChannelList.ReadJsonList();
 
-        if(ChannelList.length >0){
-            ChannelList.forEach(element => {
+        if(channelList.length >0){
+            channelList.forEach(element => {
                 client.channels.cache.get(element.id).send(message);
             });               
         }

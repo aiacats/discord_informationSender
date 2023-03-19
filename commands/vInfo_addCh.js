@@ -14,11 +14,11 @@ module.exports = {
                 ),
     async execute(interaction) {
 
-        const addChannel = interaction.options.getChannel('channel');
+        const pushChannel = interaction.options.getChannel('channel');
 
-        ChannelList.push(addChannel);
+        ChannelList.WriteChannel(pushChannel);
         
-        var message = "Add :" + String(addChannel);   
+        var message = "Add :" + String(pushChannel);   
         await interaction.reply(message); 
     },
 };

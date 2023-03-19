@@ -8,10 +8,11 @@ module.exports = {
     async execute(interaction, client) {
 
         var channelNames = "ChannelList:";
+        var channelList = ChannelList.ReadJsonList();
 
-        if(ChannelList.length >0){
-            ChannelList.forEach(element => {
-                channelNames += '\n' + element.toString();
+        if(channelList.length >0){
+            channelList.forEach(element => {
+                channelNames += '\n - ' + element.name;
             });
         }
         else{
