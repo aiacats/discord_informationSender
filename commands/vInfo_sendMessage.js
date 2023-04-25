@@ -3,7 +3,7 @@ const ChannelList = require('../self_module/ChannelList');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('vinfo_send-message')
+        .setName('vinfo_send-message-to-list')
         .setDescription('送信リストに登録しているチャンネルにメッセージを送ります')
         .addStringOption((option) =>
             option
