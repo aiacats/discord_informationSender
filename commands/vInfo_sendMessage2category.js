@@ -14,13 +14,15 @@ module.exports = {
         )
         .addStringOption((option) =>
             option
-                .setName('message')
-                .setDescription('送信するメッセージを入力')
+                .setName('message_id')
+                .setDescription('送信するメッセージのIDを入力')
                 .setRequired(true)
         ),
     async execute(interaction, client) {
 
-        const sendMessage = interaction.options.getString('message');
+        const baseChannel = client.channels.cache.get('1084601052076199997'); // bot-messageチャンネル
+        const sendMessageID = interaction.options.getString('message_id');
+        const sendMessage = (await baseChannel.messages.fetch(sendMessageID)).content;
 
         const category = interaction.options.getChannel('category');
         const channelList = category.children.cache;
@@ -35,6 +37,6 @@ module.exports = {
             await interaction.reply(channelList.size);
         }
 
-        await interaction.reply('Message send : ' + sendMessage );
+        await interaction.reply('Message send ' + sendMessageID );
     },
 };
