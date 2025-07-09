@@ -5,7 +5,7 @@ const { token } = require('./config.json');
 const cron = require('node-cron');
 const GoogleCalendarManager = require('./self_module/GoogleCalendarManager');
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.MessageContent] });
 
 client.commands = new Collection();
 
