@@ -52,3 +52,6 @@ custom-templates.json
 
 # Calendar config
 calendar-config.json
+
+# Message templates
+data/message-templates.json
