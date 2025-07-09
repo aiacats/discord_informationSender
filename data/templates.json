@@ -1,0 +1,136 @@
+{
+  "web-project": {
+    "name": "Webプロジェクト",
+    "structure": [
+      {
+        "name": "01_企画",
+        "type": "folder",
+        "children": [
+          { "name": "要件定義", "type": "folder" },
+          { "name": "企画書", "type": "folder" },
+          { "name": "議事録", "type": "folder" }
+        ]
+      },
+      {
+        "name": "02_設計",
+        "type": "folder",
+        "children": [
+          { "name": "画面設計", "type": "folder" },
+          { "name": "DB設計", "type": "folder" },
+          { "name": "API設計", "type": "folder" }
+        ]
+      },
+      {
+        "name": "03_開発",
+        "type": "folder",
+        "children": [
+          { "name": "ソースコード", "type": "folder" },
+          { "name": "テスト", "type": "folder" },
+          { "name": "ドキュメント", "type": "folder" }
+        ]
+      },
+      {
+        "name": "04_リリース",
+        "type": "folder",
+        "children": [
+          { "name": "本番環境", "type": "folder" },
+          { "name": "マニュアル", "type": "folder" }
+        ]
+      },
+      {
+        "name": "05_運用",
+        "type": "folder",
+        "children": [
+          { "name": "保守", "type": "folder" },
+          { "name": "改善要望", "type": "folder" }
+        ]
+      }
+    ]
+  },
+  "simple-project": {
+    "name": "シンプルプロジェクト",
+    "structure": [
+      { "name": "ドキュメント", "type": "folder" },
+      { "name": "リソース", "type": "folder" },
+      { "name": "成果物", "type": "folder" },
+      { "name": "会議録", "type": "folder" }
+    ]
+  },
+  "software-project": {
+    "name": "ソフトウェア開発プロジェクト",
+    "structure": [
+      {
+        "name": "Requirements",
+        "type": "folder",
+        "children": [
+          { "name": "機能要件", "type": "folder" },
+          { "name": "非機能要件", "type": "folder" }
+        ]
+      },
+      {
+        "name": "Design",
+        "type": "folder",
+        "children": [
+          { "name": "Architecture", "type": "folder" },
+          { "name": "UI_UX", "type": "folder" }
+        ]
+      },
+      {
+        "name": "Development",
+        "type": "folder",
+        "children": [
+          { "name": "Frontend", "type": "folder" },
+          { "name": "Backend", "type": "folder" },
+          { "name": "Database", "type": "folder" },
+          { "name": "Tests", "type": "folder" }
+        ]
+      },
+      {
+        "name": "Documentation",
+        "type": "folder",
+        "children": [
+          { "name": "API", "type": "folder" },
+          { "name": "User_Guide", "type": "folder" },
+          { "name": "Developer_Guide", "type": "folder" }
+        ]
+      },
+      {
+        "name": "Project_Management",
+        "type": "folder",
+        "children": [
+          { "name": "スケジュール", "type": "folder" },
+          { "name": "議事録", "type": "folder" },
+          { "name": "レポート", "type": "folder" }
+        ]
+      }
+    ]
+  },
+  "外部案件テンプレート": {
+    "name": "外部案件テンプレート",
+    "structure": [
+      {
+        "name": "【共有NG】[projectName]",
+        "type": "folder",
+        "children": [
+          {
+            "name": "先方提出素材",
+            "type": "folder",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "【共有用】[projectName]",
+        "type": "folder",
+        "children": [
+          {
+            "name": "収録物",
+            "type": "folder",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-07-07T16:44:58.951Z"
+  }
+}
