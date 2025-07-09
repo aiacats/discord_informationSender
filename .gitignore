@@ -43,3 +43,12 @@ out/
 .prettiercache
 .eslintcache
 config.json
+
+# Google credentials
+google-credentials.json
+
+# Custom templates
+custom-templates.json
+
+# Calendar config
+calendar-config.json

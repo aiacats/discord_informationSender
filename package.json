@@ -11,7 +11,10 @@
   "dependencies": {
     "@discordjs/builders": "^1.4.0",
     "@discordjs/rest": "^1.5.0",
+    "@google-cloud/local-auth": "^3.0.1",
     "discord-api-types": "^0.37.35",
-    "discord.js": "^14.7.1"
+    "discord.js": "^14.7.1",
+    "googleapis": "^150.0.1",
+    "node-cron": "^4.2.0"
   }
 }
